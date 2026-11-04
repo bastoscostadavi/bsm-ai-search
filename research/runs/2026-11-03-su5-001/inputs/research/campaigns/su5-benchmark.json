@@ -1,0 +1,46 @@
+{
+  "campaign_id": "su5-benchmark",
+  "title": "SU(5) matter and adjoint-vacuum benchmark",
+  "question": "Can separate tool-using explorer and vacuum agents reproduce a known embedding and a qualified tree-level scalar vacuum analysis?",
+  "scope": {
+    "spacetime_dimensions": 4,
+    "supersymmetry": false,
+    "gauge_group": "SU(5)",
+    "fermions": "3 copies of left-handed 10 plus conjugate 5",
+    "scalars": "one real adjoint 24; electroweak Higgs deferred",
+    "hypercharge": "Q = T3 + Y; fundamental Y = diag(-1/3,-1/3,-1/3,1/2,1/2)",
+    "target_vev": "v diag(2,2,2,-3,-3)",
+    "control_vev": "v diag(1,1,1,1,-4)"
+  },
+  "roles": [
+    "explorer",
+    "vacuum"
+  ],
+  "tasks": [
+    "Derive exact branchings, net chirality, and local anomaly cancellation.",
+    "Hand off a versioned candidate from explorer to vacuum.",
+    "Compute both VEV stabilizers and investigate a renormalizable adjoint potential.",
+    "Separate singlet existence, stationarity, boundedness, local stability, and global minimality.",
+    "Rerun saved calculations and preserve failures and unresolved checks."
+  ],
+  "limits": {
+    "max_specialist_sessions": 2,
+    "command_timeout_seconds": 60,
+    "max_candidate_revisions": 1
+  },
+  "deferred": [
+    "electroweak breaking",
+    "realistic Yukawa sector",
+    "neutrino masses",
+    "dark matter",
+    "proton decay",
+    "loop corrections",
+    "full phenomenological viability"
+  ],
+  "acceptance": [
+    "Exact rational charges and dimension checks.",
+    "Explicit evidence files for every reported check.",
+    "An unsuitable VEV control is recognized.",
+    "Results can be reproduced independently of subagent conversation state."
+  ]
+}

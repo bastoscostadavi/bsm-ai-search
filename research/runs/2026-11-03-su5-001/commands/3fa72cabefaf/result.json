@@ -1,0 +1,21 @@
+{
+  "command_id": "3fa72cabefaf",
+  "actor": "coordinator",
+  "argv": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "/Users/davicosta/Desktop/projects/bsm-ai-search/research/tests",
+    "-v"
+  ],
+  "cwd": "/Users/davicosta/Desktop/projects/bsm-ai-search/research/runs/2026-11-03-su5-001",
+  "started_at_utc": "2026-11-03T23:17:00.752828+00:00",
+  "timeout_seconds": 60.0,
+  "finished_at_utc": "2026-11-03T23:17:01.370961+00:00",
+  "returncode": 0,
+  "timed_out": false,
+  "interrupted": false,
+  "error": null
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.2",
+  "is_template": true,
+  "run_id": null,
+  "parent_run_ids": [],
+  "candidate_ids": [],
+  "created_at_utc": null,
+  "campaign": {
+    "path": null,
+    "sha256": null
+  },
+  "repository": {
+    "commit": null,
+    "dirty": null,
+    "patch_path": null
+  },
+  "runtime": {
+    "backend": "codex-chat-native-subagents",
+    "model": null,
+    "python": null
+  },
+  "sessions": [],
+  "tools": [],
+  "limits": {
+    "wall_time_seconds": null,
+    "max_attempts": null,
+    "max_concurrency": null
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "input_snapshots": [],
+  "logging": {
+    "available": [
+      "explicit prompts",
+      "coordinator events",
+      "recorded commands",
+      "saved outputs and reports"
+    ],
+    "unavailable": [
+      "automatic complete transcript export",
+      "complete tool-call interception",
+      "private reasoning",
+      "authoritative per-session usage"
+    ]
+  },
+  "unresolved_questions": []
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Unity of All Elementary-Particle Forces",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.32.438",
+    "use": "Original SU(5) proposal; own saved code supplies benchmark derivations."
+  },
+  {
+    "title": "An SU(2) anomaly",
+    "url": "https://doi.org/10.1016/0370-2693(82)90728-6",
+    "use": "Ordinary SU(2) doublet parity test; bibliographic metadata and author-institution abstract inspected, full original text not retrieved."
+  },
+  {
+    "title": "Codex subagents",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "use": "Native chat delegation and permissions; official documentation inspected."
+  }
+]

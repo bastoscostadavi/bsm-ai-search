@@ -1,0 +1,140 @@
+[
+  {
+    "check_id": "candidate_handoff",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "The scalar calculation verifies the exact immutable candidate SHA-256 and conventions.",
+    "scope": "Candidate su5 r1.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md",
+      "candidates/su5-r1.json"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "target_stabilizer",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "diag(2,2,2,-3,-3) has twelve unbroken generators and the SM gauge algebra.",
+    "scope": "Real adjoint conjugation action.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "control_sm_stabilizer",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "fail",
+    "statement": "diag(1,1,1,1,-4) leaves su(4)+u(1), with sixteen unbroken generators.",
+    "scope": "Deliberately unsuitable stabilizer control.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": [
+      "Intentional negative control, not rejection of the target candidate."
+    ]
+  },
+  {
+    "check_id": "stationarity",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "Projected gradient vanishes at m^2=44,a=b=v=1,c=0.",
+    "scope": "Concrete adjoint potential and target VEV.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "boundedness",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "For a>0,b>0 the positive quartic bounds the cubic-free potential below.",
+    "scope": "Sufficient region, not the complete boundedness domain.",
+    "assumptions": [
+      "Hermitian traceless Sigma.",
+      "c=0."
+    ],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "local_stability",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "Full rational Hessian/kinetic calculation gives mass squared 5 (8 modes),20 (3),44 (1),0 (12 gauge modes).",
+    "scope": "Tree-level point a=b=v=1,c=0 and positive region in that slice.",
+    "assumptions": [
+      "Lkin=Tr(D Sigma)^2."
+    ],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": [
+      "No loop correction; no full cubic parameter-space scan."
+    ]
+  },
+  {
+    "check_id": "global_minimum",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "unknown",
+    "statement": "No exhaustive comparison of stationary orbits was performed.",
+    "scope": "Global minimality.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "full_model_viability",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "unknown",
+    "statement": "Electroweak breaking, realistic Yukawas, neutrino masses, dark matter and phenomenology are deferred.",
+    "scope": "Complete BSM theory.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/vacuum.py",
+      "artifacts/vacuum.json",
+      "sessions/vacuum/report.md"
+    ],
+    "limitations": []
+  }
+]

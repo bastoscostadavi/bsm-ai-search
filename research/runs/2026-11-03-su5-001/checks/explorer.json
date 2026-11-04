@@ -1,0 +1,106 @@
+[
+  {
+    "check_id": "fermion_branching",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "10+5bar gives exactly one chiral SM generation; three copies give 45 Weyl components.",
+    "scope": "Fixed 3+2 embedding and exterior-power representations.",
+    "assumptions": [
+      "Q=T3+Y; all fermions left-handed."
+    ],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": [
+      "Irrep labels use known exterior-power identities; not a general branching implementation."
+    ]
+  },
+  {
+    "check_id": "local_anomalies",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "SU(5) cubic and SM local gauge/mixed gravitational anomaly sums vanish.",
+    "scope": "Listed representations only.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": [
+      "SU(2)^3 vanishes by absence of a symmetric cubic invariant; no general anomaly solver."
+    ]
+  },
+  {
+    "check_id": "ordinary_witten",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "There are four SU(2) doublets per generation and twelve in total, an even count.",
+    "scope": "Ordinary Witten doublet anomaly on spin spacetime.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": [
+      "Not a complete bordism or generalized-background anomaly analysis."
+    ]
+  },
+  {
+    "check_id": "global_group",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "pass",
+    "statement": "The block subgroup is S(U(3)xU(2)), with a Z6 quotient of SU(3)xSU(2)xU(1).",
+    "scope": "Explicit homomorphism and kernel for this embedding.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "complete_global_anomalies",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "unknown",
+    "statement": "A full global anomaly classification was not performed.",
+    "scope": "Beyond the ordinary SU(2) parity test.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": []
+  },
+  {
+    "check_id": "realistic_fermion_masses",
+    "candidate_id": "su5",
+    "candidate_revision": "r1",
+    "status": "unknown",
+    "statement": "No electroweak Higgs/Yukawa completion was included.",
+    "scope": "Full phenomenological model.",
+    "assumptions": [],
+    "approximation": "exact algebra / tree-level where relevant",
+    "evidence_paths": [
+      "code/explorer.py",
+      "artifacts/explorer.json",
+      "sessions/explorer/report.md"
+    ],
+    "limitations": []
+  }
+]

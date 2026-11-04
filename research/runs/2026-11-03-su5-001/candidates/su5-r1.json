@@ -1,0 +1,37 @@
+{
+  "candidate_id": "su5",
+  "revision": "r1",
+  "parent_candidate_ids": [],
+  "scope": "Known embedding benchmark, not a complete realistic model",
+  "gauge_algebra": "su(5)",
+  "gauge_group": "SU(5), simply connected",
+  "embedding": {
+    "factor_order": ["SU(3)c", "SU(2)L", "U(1)Y"],
+    "fundamental_block_split": [3, 2],
+    "hypercharge_generator": ["-1/3", "-1/3", "-1/3", "1/2", "1/2"],
+    "electric_charge_convention": "Q = T3 + Y",
+    "group_homomorphism": "(A,B,z) -> diag(z^-2 A,z^3 B), A in SU(3), B in SU(2), z in U(1)",
+    "integer_U1_generator": "6Y = diag(-2,-2,-2,3,3)",
+    "global_image": "S(U(3) x U(2)) = (SU(3) x SU(2) x U(1))/Z6",
+    "kernel_generator": "(exp(2*pi*i/3) I3, -I2, exp(pi*i/3))",
+    "weight_convention": "Fundamental-index occupation vectors; Cartan generators traceless; 10 = exterior square of fundamental"
+  },
+  "fermions": [
+    {"irrep": "10", "dynkin_labels": [0, 1, 0, 0], "dimension": 10, "multiplicity": 3, "lorentz": "left-handed Weyl", "reality": "complex"},
+    {"irrep": "5bar", "dynkin_labels": [0, 0, 0, 1], "dimension": 5, "multiplicity": 3, "lorentz": "left-handed Weyl", "reality": "complex"}
+  ],
+  "branchings_per_copy": {
+    "10": ["(3,2)_(1/6)", "(3bar,1)_(-2/3)", "(1,1)_1"],
+    "5bar": ["(3bar,1)_(1/3)", "(1,2)_(-1/2)"]
+  },
+  "extra_fermions": [],
+  "right_handed_neutrinos": "absent",
+  "scalar_sector": "deferred to vacuum investigator; campaign restricts initial analysis to a real adjoint 24",
+  "evidence_paths": ["code/explorer.py", "artifacts/explorer.json", "checks/explorer.json", "sessions/explorer/report.md"],
+  "handoff_questions": [
+    "Does a real adjoint VEV proportional to diag(2,2,2,-3,-3) have exactly the desired continuous stabilizer?",
+    "What stabilizer does the unsuitable diag(1,1,1,1,-4) control have?",
+    "Which renormalizable adjoint invariants support the desired stationary point, and what stability claims can be established?",
+    "Keep electroweak Higgs fields, realistic Yukawa couplings, neutrino masses and full phenomenology explicitly deferred."
+  ]
+}

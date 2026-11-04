@@ -1,0 +1,7 @@
+{
+  "native_agent_id": "/root/vacuum",
+  "outcome": "usage_limit_error",
+  "specialist_report_completed": false,
+  "continued_by": "coordinator",
+  "note": "Preserved files were reviewed and completed after the native session failed. Full native transcript export is unavailable."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.2",
+  "is_template": false,
+  "run_id": "2026-11-03-su5-001",
+  "parent_run_ids": [],
+  "candidate_ids": [
+    "su5"
+  ],
+  "created_at_utc": "2026-11-03T23:03:41.116321+00:00",
+  "campaign_id": "su5-benchmark",
+  "repository": {
+    "commit": "ed804b67209e3e2471ed989b847cea21cdf86003",
+    "dirty": true,
+    "patch_path": "inputs/working-tree.patch",
+    "note": "Untracked inputs are preserved by explicit snapshots; the patch covers tracked files only."
+  },
+  "runtime": {
+    "backend": "codex-chat-native-subagents",
+    "model": null,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+  },
+  "sessions": [
+    {
+      "role": "explorer",
+      "agent_id": "/root/explorer",
+      "prompt": "sessions/explorer/prompt.txt",
+      "execution_status": "interrupted",
+      "reason": "native subagent usage limit",
+      "report_completed_by": "coordinator"
+    },
+    {
+      "role": "vacuum",
+      "agent_id": "/root/vacuum",
+      "prompt": "sessions/vacuum/prompt.txt",
+      "execution_status": "interrupted",
+      "reason": "native subagent usage limit",
+      "report_completed_by": "coordinator"
+    }
+  ],
+  "tools": [
+    "native collaboration subagents and messages",
+    "functions.exec: shell/Python",
+    "web search for literature and official documentation"
+  ],
+  "limits": {
+    "max_specialist_sessions": 2,
+    "command_timeout_seconds": 60,
+    "max_candidate_revisions": 1
+  },
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  "input_snapshots": [
+    {
+      "source": "README.md",
+      "snapshot": "inputs/README.md",
+      "sha256": "87a0994ed2c38dbdd0bb77549039daa6a60920a1ed97fbd64920d232681e2a75"
+    },
+    {
+      "source": "AGENTS.md",
+      "snapshot": "inputs/AGENTS.md",
+      "sha256": "31b2259ea8fdab8ff4ee3a8b3e6fa064c1cf9616e2ba05d46c1a2e92022eba08"
+    },
+    {
+      "source": "research/DESIGN.md",
+      "snapshot": "inputs/research/DESIGN.md",
+      "sha256": "a4d88a038689fa1fd6999d914552494157c99a3e19ca1c160a39564e7a7fe663"
+    },
+    {
+      "source": "research/agents/explorer.md",
+      "snapshot": "inputs/research/agents/explorer.md",
+      "sha256": "cb93350f5f58c8c822eafb36d8ef30c3e1db820d0a1b5141213fe5a85d832062"
+    },
+    {
+      "source": "research/agents/vacuum.md",
+      "snapshot": "inputs/research/agents/vacuum.md",
+      "sha256": "6afefe140565a17a731a2c7d503b23a41094bcff2e04115269dfb0a257722455"
+    },
+    {
+      "source": "research/tools/records.py",
+      "snapshot": "inputs/research/tools/records.py",
+      "sha256": "b9b588b2577a791a6f298dad5f157ad73a56c1219f781ef999d22b2c20fd103d"
+    },
+    {
+      "source": "research/campaigns/su5-benchmark.json",
+      "snapshot": "inputs/research/campaigns/su5-benchmark.json",
+      "sha256": "c95f9f207bca7fd93b638fa3e7945d44a24e54f0bcda6ba732d918dcda6c29fa"
+    },
+    {
+      "source": "research/tools/records.py",
+      "snapshot": "inputs/reviewed/research/tools/records.py",
+      "sha256": "42388155648c25ceee976fbd05f33879f971e7fcf102f180408f46b5b69888dc",
+      "stage": "coordinator review"
+    },
+    {
+      "source": "research/tests/test_records.py",
+      "snapshot": "inputs/reviewed/research/tests/test_records.py",
+      "sha256": "604b0fbaa1022aad3140e35896adf0ff0f63a9bd6da1c2def707aef30976bc66",
+      "stage": "coordinator review"
+    }
+  ],
+  "logging": {
+    "available": [
+      "explicit prompts",
+      "coordinator events",
+      "recorded calculation commands",
+      "saved outputs and reports"
+    ],
+    "unavailable": [
+      "automatic full chat/subagent transcript export",
+      "private model reasoning",
+      "complete tool-call interception",
+      "authoritative per-session token and cost totals"
+    ]
+  },
+  "coordinator_continuation": "Reviewed saved specialist calculations, completed missing reports, and independently verified outputs after both specialist sessions hit usage limits."
+}

@@ -1,0 +1,15 @@
+{
+  "fresh_directory_reproduction": [
+    "explorer",
+    "vacuum"
+  ],
+  "exact_polynomial_diagonal_curvatures": 24,
+  "exact_polynomial_mixed_curvatures": 276,
+  "scientific_check_status_counts": {
+    "pass": 9,
+    "unknown": 4,
+    "fail": 1
+  },
+  "all_assertions_passed": true,
+  "limitation": "Reproduction and consistency checks are not independent proof of complete model viability."
+}

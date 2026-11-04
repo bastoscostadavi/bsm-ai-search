@@ -1,0 +1,12 @@
+test_command_failure_and_timeout_keep_outputs (test_records.RecordsTest.test_command_failure_and_timeout_keep_outputs) ... ok
+test_concurrent_writers_preserve_unique_sequences (test_records.RecordsTest.test_concurrent_writers_preserve_unique_sequences) ... ok
+test_inputs_are_snapshotted_and_attempt_cannot_be_overwritten (test_records.RecordsTest.test_inputs_are_snapshotted_and_attempt_cannot_be_overwritten) ... ok
+test_interruption_resume_and_terminal_state_survive_new_processes (test_records.RecordsTest.test_interruption_resume_and_terminal_state_survive_new_processes) ... ok
+test_sealing_detects_changes_additions_and_missing_files (test_records.RecordsTest.test_sealing_detects_changes_additions_and_missing_files) ... ok
+test_truncated_journal_fails_visibly (test_records.RecordsTest.test_truncated_journal_fails_visibly) ... ok
+test_unfinished_command_prevents_false_completion (test_records.RecordsTest.test_unfinished_command_prevents_false_completion) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.550s
+
+OK

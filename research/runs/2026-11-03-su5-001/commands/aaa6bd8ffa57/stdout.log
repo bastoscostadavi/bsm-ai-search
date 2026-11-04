@@ -1,0 +1,13 @@
+{
+  "artifact": "artifacts/vacuum.json",
+  "candidate_sha256": "7f29f55572e38804366c9a68b5e344dd5867de07e7e520401cc433169ddeb785",
+  "target_unbroken_generators": 12,
+  "control_unbroken_generators": 16,
+  "mass_squared_multiplicities": {
+    "5": 8,
+    "0": 12,
+    "20": 3,
+    "44": 1
+  },
+  "all_assertions_passed": true
+}
